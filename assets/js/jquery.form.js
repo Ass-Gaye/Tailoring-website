@@ -138,7 +138,6 @@ $.fn.ajaxSubmit = function(options) {
     // are there files to upload?
 
     // [value] (issue #113), also see comment:
-    // https://github.com/malsup/form/commit/588306aedba1de01388032d5f42a60159eea9228#commitcomment-2180219
     var fileInputs = $('input[type=file]:enabled[value!=""]', this);
 
     var hasFileInputs = fileInputs.length > 0;

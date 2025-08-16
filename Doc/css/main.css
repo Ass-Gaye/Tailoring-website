@@ -19,6 +19,7 @@ a, a:hover, a:focus{
 	text-decoration: none;
 	outline: 0;
 }
+
 h1, h2, h3,
 h4, h5, h6 {
     color: #333;
@@ -65,10 +66,15 @@ section p {
 .clearfix:after {
     clear: both;
 }
-.clearfix {
-    *zoom: 1;
-}
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE6/7 */
+}
 .tan {
   margin-bottom: 10px;
 }
